@@ -3,7 +3,6 @@
   color: var(--theme-primary-color);
   display: flex;
   justify-content: center;
-  font-family: Montserrat;
 }
 
 .header ul li {
@@ -14,6 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  padding: 0;
 }
 
 .header__left li {
@@ -22,7 +22,7 @@
 
 .header__left li:nth-child(2) {
   font-size: 2.5vh;
-  opacity: 0.2;
+  opacity: 0.4;
 }
 
 .header__right {

@@ -1,0 +1,25 @@
+.home {
+  margin-top: 18vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vmin;
+}
+
+.home ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.home__left {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  color: var(--theme-secondary-color);
+}
+
+.home__right {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}

@@ -20,21 +20,21 @@ function Navbar() {
         <li>
           <Link to="/about">
             <AiFillIdcard className="nav__icon" />
-            About
+            <span>About</span>
           </Link>
         </li>
 
         <li>
           <Link to="/projects">
             <AiFillFolderOpen className="nav__icon" />
-            Projects
+            <span>Projects</span>
           </Link>
         </li>
 
         <li>
-          <Link to="/projects">
+          <Link to="/contact">
             <AiFillWechat className="nav__icon" />
-            Contact
+            <span>Contact</span>
           </Link>
         </li>
       </ul>
