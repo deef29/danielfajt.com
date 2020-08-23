@@ -1,0 +1,36 @@
+.header {
+  background-color: var(--theme-surface-color);
+  color: var(--theme-primary-color);
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat;
+}
+
+.header ul li {
+  list-style: none;
+}
+
+.header__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header__left li {
+  font-size: 7vh;
+}
+
+.header__left li:nth-child(2) {
+  font-size: 2.5vh;
+  opacity: 0.2;
+}
+
+.header__right {
+  color: var(--theme-secondary-color);
+  opacity: 0.6;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font-size: 8vh;
+  margin-left: 20px;
+}
