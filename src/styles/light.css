@@ -1,16 +1,9 @@
 :root {
   --theme-background-color: white;
 
-  --theme-navbar-color: #fafafa;
-  --theme-on-navbar-color: #9f9f9f;
+  --theme-surface-color: #efefef;
+  --theme-surface-color-light: #fafafa;
 
   --theme-primary-color: #9f9f9f;
-  --theme-primary-color-light: #fcfcfc;
   --theme-secondary-color: #ff6700;
-
-  --theme-surface-color: #efefef;
-  --theme-on-surface-color: #9f9f9f;
-
-  --theme-error-color: rgb(206, 41, 0);
-  --theme-on-error-color: #ebebeb;
 }
