@@ -1,0 +1,11 @@
+.projects {
+  margin-top: 8vw;
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.projects div {
+  margin: 0.2vh;
+}

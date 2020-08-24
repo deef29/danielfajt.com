@@ -1,8 +1,14 @@
 .header {
   background-color: var(--theme-surface-color);
-  color: var(--theme-primary-color);
   display: flex;
   justify-content: center;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.header a {
+  text-decoration: none;
+  color: var(--theme-primary-color);
 }
 
 .header ul li {

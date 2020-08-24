@@ -4,10 +4,9 @@ import { Link } from "react-router-dom";
 import "./projectCard.css";
 
 function ProjectCard(props) {
-  console.log("stack", props);
-  const name = props.name;
-  const desc = props.desc;
-  const stack = props.stack;
+  const name = props.data.name;
+  const desc = props.data.desc;
+  const stack = props.data.stack;
 
   return (
     <div>
@@ -17,7 +16,7 @@ function ProjectCard(props) {
         <ul className="project-card__stack">
           {stack
             ? stack.map((item) => {
-                return <li key={item.key}>{item}</li>;
+                return <li key={item}>{item}</li>;
               })
             : "No data"}
         </ul>

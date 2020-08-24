@@ -1,14 +1,17 @@
 import React from "react";
+// Style
+import "./projects.css";
 // Components
 import ProjectCard from "./ProjectCard";
-import ProjectGrid from "./ProjectGrid";
+// Static data
+import { projects } from "./_projectsData";
 
 function Projects() {
   return (
-    <div>
-      <h1>Projects view</h1>
-      <ProjectCard />
-      <ProjectGrid />
+    <div className="projects">
+      {projects.map((project) => {
+        return <ProjectCard key={project.key} data={project} />;
+      })}
     </div>
   );
 }

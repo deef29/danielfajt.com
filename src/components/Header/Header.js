@@ -1,17 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./header.css";
 
 function Header() {
   return (
     <header className="header">
-      <ul className="header__left">
-        <li>Daniel</li>
-        <li>danielfajt.com</li>
-        <li>Fajt</li>
-      </ul>
-      <ul className="header__right">
-        <li>Web</li>
-      </ul>
+      <Link to="/">
+        <ul className="header__left">
+          <li>Daniel</li>
+          <li>danielfajt.com</li>
+          <li>Fajt</li>
+        </ul>
+      </Link>
+      <Link to="/">
+        <ul className="header__right">
+          <li>Web</li>
+        </ul>
+      </Link>
     </header>
   );
 }
