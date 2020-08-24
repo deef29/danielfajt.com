@@ -1,0 +1,16 @@
+.project-grid {
+  box-sizing: border-box;
+  background-color: lightblue;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-items: center;
+
+  /* grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); */
+  gap: 2px;
+}
+
+.project-grid p {
+  background-color: lightcoral;
+  margin: auto;
+}

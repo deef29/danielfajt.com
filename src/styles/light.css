@@ -5,5 +5,6 @@
   --theme-surface-color-light: #fafafa;
 
   --theme-primary-color: #9f9f9f;
-  --theme-secondary-color: #ff6700;
+  --theme-primary-color-dark: #3a3a3a;
+  --theme-secondary-color: #ff9533;
 }
