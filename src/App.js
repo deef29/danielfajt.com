@@ -6,8 +6,11 @@ import "./styles/global.css";
 // Components
 import Header from "./components/Header/Header";
 import NavBar from "./components/Navbar/Navbar";
-import Home from "./components/Home/Home";
-import Projects from "./components/Projects/Projects";
+// Pages
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -17,7 +20,9 @@ function App() {
         <NavBar />
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/about" component={About} />
           <Route path="/projects" component={Projects} />
+          <Route path="/contact" component={Contact} />
         </Switch>
       </BrowserRouter>
     </div>

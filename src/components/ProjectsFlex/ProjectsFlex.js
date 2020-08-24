@@ -1,15 +1,15 @@
 import React from "react";
 // Style
-import "./projects.css";
+import "./projectsFlex.css";
 // Components
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../ProjectCard/ProjectCard";
 // Static data
-import { projects } from "./_projectsData";
+import projectsData from "./_projectsData.json";
 
 function Projects() {
   return (
     <div className="projects">
-      {projects.map((project) => {
+      {projectsData.map((project) => {
         return <ProjectCard key={project.key} data={project} />;
       })}
     </div>

@@ -2,6 +2,7 @@
   color: var(--theme-primary-color);
   font-size: 1.2em;
   padding-top: 1vh;
+  margin-right: 1vw;
 }
 
 .nav ul {

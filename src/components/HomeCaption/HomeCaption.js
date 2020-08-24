@@ -1,15 +1,15 @@
 import React from "react";
-import "./home.css";
+import "./HomeCaption.css";
 
 function Home() {
   const af = "=>";
   return (
-    <div className="home">
-      <ul className="home__left">
+    <div className="home-caption">
+      <ul className="home-caption__left">
         <li>From network</li>
         <li>engineer_</li>
       </ul>
-      <ul className="home__right">
+      <ul className="home-caption__right">
         <li>{af} to</li>
         <li>developer</li>
       </ul>

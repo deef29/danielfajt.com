@@ -1,4 +1,4 @@
-.home {
+.home-caption {
   margin-top: 18vh;
   display: flex;
   justify-content: center;
@@ -6,20 +6,21 @@
   font-size: 5vmin;
 }
 
-.home ul {
+.home-caption ul {
   list-style: none;
   padding: 10px;
 }
 
-.home__left {
+.home-caption__left {
   display: flex;
   flex-flow: column;
   align-items: flex-end;
   color: var(--theme-secondary-color);
 }
 
-.home__right {
+.home-caption__right {
   display: flex;
   flex-flow: column;
   align-items: flex-start;
+  color: var(--theme-primary-color);
 }
