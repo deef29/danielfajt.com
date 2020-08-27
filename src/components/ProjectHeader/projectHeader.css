@@ -1,0 +1,33 @@
+.projectHeader {
+  background-color: red;
+  color: var(--theme-text-color-1);
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+}
+
+.projectHeader h1 {
+  margin: 10px;
+}
+
+.projectHeader__left {
+  font-family: "Montserrat-Light";
+  font-size: 3vw;
+}
+
+.projectHeader__right {
+  color: var(--theme-text-color-2);
+  font-size: 4vw;
+}
+
+/* Small device */
+@media all and (max-width: 500px) {
+  .projectHeader {
+    flex-flow: column;
+    align-items: center;
+  }
+  .projectHeader__left {
+    font-size: 6vw;
+  }
+}
