@@ -22,7 +22,6 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
           <Route path="/projects" component={Projects} />
-          <Route path="/projects/:name" component={Projects} />
           <Route path="/contact" component={Contact} />
         </Switch>
       </BrowserRouter>

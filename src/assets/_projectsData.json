@@ -1,7 +1,6 @@
 [
   {
     "key": 1,
-    "url": "/pangea",
     "name": "Pangea",
     "desc": "Internet service provider network discovery and inventory system",
     "stack": [

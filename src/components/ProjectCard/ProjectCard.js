@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 import "./projectCard.css";
 
 function ProjectCard(props) {
-  const name = props.data.name;
-  const desc = props.data.desc;
-  const stack = props.data.stack;
+  const name = props.cardData.name;
+  const desc = props.cardData.desc;
+  const stack = props.cardData.stack;
+  const url = "projects/" + props.cardData.key || "404";
 
   return (
     <div>
@@ -21,7 +22,9 @@ function ProjectCard(props) {
             : "No data"}
         </ul>
         <p className="project-card__button">
-          <button>Details</button>
+          <Link to={url}>
+            <button>Details</button>
+          </Link>
         </p>
       </div>
     </div>

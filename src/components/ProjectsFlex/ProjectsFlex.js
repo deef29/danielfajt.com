@@ -3,14 +3,12 @@ import React from "react";
 import "./projectsFlex.css";
 // Components
 import ProjectCard from "../ProjectCard/ProjectCard";
-// Static data
-import projectsData from "./_projectsData.json";
 
-function Projects() {
+function Projects(props, { match }) {
   return (
     <div className="projects">
-      {projectsData.map((project) => {
-        return <ProjectCard key={project.key} data={project} />;
+      {props.cardData.map((project) => {
+        return <ProjectCard key={project.key} cardData={project} />;
       })}
     </div>
   );
