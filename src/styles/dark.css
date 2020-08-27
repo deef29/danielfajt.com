@@ -1,16 +1,7 @@
 :root {
-  --theme-background-color: #ebebeb;
-
-  --theme-navbar-color: #004e98;
-  --theme-on-navbar-color: #ebebeb;
-
-  --theme-primary-color: #004e98;
-  --theme-primary-color-light: #3a6ea5;
-  --theme-secondary-color: #ff6700;
-
-  --theme-surface-color: #004e98;
-  --theme-on-surface-color: #ebebeb;
-
-  --theme-error-color: rgb(206, 41, 0);
-  --theme-on-error-color: #ebebeb;
+  /* Background */
+  --theme-background-color: rgb(38, 44, 66);
+  /* Font */
+  --theme-text-color-1: #9f9f9f;
+  --theme-text-color-2: #ff9533;
 }

@@ -1,5 +1,5 @@
 .home-caption {
-  margin-top: 18vh;
+  margin-top: 16vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,12 +15,12 @@
   display: flex;
   flex-flow: column;
   align-items: flex-end;
-  color: var(--theme-secondary-color);
+  color: var(--theme-text-color-2);
 }
 
 .home-caption__right {
   display: flex;
   flex-flow: column;
   align-items: flex-start;
-  color: var(--theme-primary-color);
+  color: var(--theme-text-color-1);
 }

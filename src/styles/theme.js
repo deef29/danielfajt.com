@@ -5,7 +5,7 @@ const themes = {
   dark: "./dark.css",
 };
 
-const activeTheme = "default"; // TODO Get value from global state...
+const activeTheme = "dark"; // TODO Get value from global state...
 const themeFile = themes[activeTheme] || themes["default"];
 
 require(`${themeFile}`);

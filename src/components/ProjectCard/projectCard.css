@@ -5,16 +5,16 @@
 .project-card {
   border: 1px solid;
   border-radius: 8px;
-  border-color: var(--theme-primary-color);
+  border-color: var(--theme-text-color-2);
   box-sizing: border-box;
   min-width: 250px;
   max-width: 300px;
-  color: var(--theme-primary-color-dark);
+  color: var(--theme-text-color-2);
   padding: 0;
 }
 
 .project-card__title {
-  color: var(--theme-secondary-color);
+  color: var(--theme-text-color-1);
   margin: 0;
   opacity: 0.8;
   padding: var(--card-def-padding);
@@ -27,7 +27,7 @@
 }
 
 .project-card__stack {
-  background-color: var(--theme-secondary-color);
+  color: var(--theme-text-color-1);
   list-style: none;
   text-align: center;
   padding: 1vw;
@@ -40,8 +40,8 @@
   margin-right: 1vw;
 }
 .project-card__button button {
-  background-color: var(--theme-surface-color);
-  color: var(--theme-primary-color-dark);
+  background-color: var(--theme-background-color);
+  color: var(--theme-text-color-2);
   border: none;
   border-radius: 8px;
   padding: 10px;
@@ -50,5 +50,6 @@
   transition: all 0.5s;
 }
 .project-card__button button:hover {
-  background-color: var(--theme-primary-color);
+  color: var(--theme-background-color);
+  background-color: var(--theme-text-color-2);
 }
