@@ -3,9 +3,9 @@
   display: flex;
   box-sizing: border-box;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .projects div {
-  margin: 0.2vh;
+  margin: 0.5vh;
 }

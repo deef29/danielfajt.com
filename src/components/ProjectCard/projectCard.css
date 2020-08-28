@@ -1,50 +1,41 @@
-:root {
-  --card-def-padding: 1vh 1vw;
-}
-
 .project-card {
+  color: var(--theme-text-color-2);
+  border-color: var(--theme-text-color-1);
+  background-color: rgb(45, 51, 80);
   border: 1px solid;
   border-radius: 8px;
-  border-color: var(--theme-text-color-2);
   box-sizing: border-box;
   min-width: 250px;
   max-width: 300px;
-  color: var(--theme-text-color-2);
-  padding: 0;
-}
-
-.project-card__title {
-  color: var(--theme-text-color-1);
-  margin: 0;
-  opacity: 0.8;
-  padding: var(--card-def-padding);
+  padding: 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 .project-card__desc {
   font-family: "Montserrat-LightItalic";
-  padding: var(--card-def-padding);
-  margin: 0;
+  color: var(--theme-text-color-1);
+  text-align: center;
+}
+
+.project-card__title {
+  font-family: "Montserrat-Light";
 }
 
 .project-card__stack {
   color: var(--theme-text-color-1);
+  padding: 0;
   list-style: none;
   text-align: center;
-  padding: 1vw;
-  opacity: 0.9;
 }
 
-.project-card__button {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 1vw;
-}
 .project-card__button button {
-  background-color: var(--theme-background-color);
+  background-color: inherit;
   color: var(--theme-text-color-2);
-  border: none;
-  border-radius: 8px;
+  border: 1px solid;
   padding: 10px;
+  border-radius: 8px;
   font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.5s;

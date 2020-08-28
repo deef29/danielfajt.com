@@ -12,14 +12,14 @@ function ProjectCard(props) {
   return (
     <div>
       <div className="project-card">
-        <h2 className="project-card__title">{name}</h2>
         <p className="project-card__desc">{desc}</p>
+        <h2 className="project-card__title">{name}</h2>
         <ul className="project-card__stack">
           {stack
             ? stack.map((item) => {
                 return <li key={item}>{item}</li>;
               })
-            : "No data"}
+            : "No projects found"}
         </ul>
         <p className="project-card__button">
           <Link to={url}>

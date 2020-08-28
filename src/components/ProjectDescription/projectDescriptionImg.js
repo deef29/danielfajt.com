@@ -14,6 +14,8 @@ function projectDescriptionImg(props) {
       large={url}
       alt={alt}
       hideZoom={true}
+      hideDownload={true}
+      showRotate={false}
       className="projectImgSmall"
     />
   );
