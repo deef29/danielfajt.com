@@ -1,5 +1,4 @@
 .projectHeader {
-  background-color: red;
   color: var(--theme-text-color-1);
   display: flex;
   justify-content: center;
@@ -13,12 +12,12 @@
 
 .projectHeader__left {
   font-family: "Montserrat-Light";
-  font-size: 3vw;
+  font-size: 2vmax;
 }
 
 .projectHeader__right {
   color: var(--theme-text-color-2);
-  font-size: 4vw;
+  font-size: 3vmax;
 }
 
 /* Small device */
@@ -27,7 +26,7 @@
     flex-flow: column;
     align-items: center;
   }
-  .projectHeader__left {
-    font-size: 6vw;
+  .projectHeader h1 {
+    margin: 2px;
   }
 }

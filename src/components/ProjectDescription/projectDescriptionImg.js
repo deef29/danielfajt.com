@@ -1,0 +1,22 @@
+import React from "react";
+// Style
+import "./projectDescriptionImg.css";
+// Components
+import ModalImage from "react-modal-image";
+
+function projectDescriptionImg(props) {
+  const url = props.url;
+  const alt = props.alt;
+
+  return (
+    <ModalImage
+      small={url}
+      large={url}
+      alt={alt}
+      hideZoom={true}
+      className="projectImgSmall"
+    />
+  );
+}
+
+export default projectDescriptionImg;
