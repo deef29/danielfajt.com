@@ -1,10 +1,7 @@
 import React from "react";
-// Styles
-import "./projectPangea.css";
 // Components
-import ProjectHeader from "../ProjectHeader/ProjectHeader";
-import ProjectDescription from "../ProjectDescription/ProjectDescription";
-import Image from "../ProjectDescription/projectDescriptionImg";
+import ProjectDetail from "../ProjectDetail/ProjectDetail";
+import Image from "../ProjectDetail/projectDescriptionImg";
 // Assets
 import { descriptionPangea } from "../../assets/_staticData";
 import discoveryScheme from "../../assets/pangea-discovery.jpg";
@@ -12,12 +9,17 @@ import discoveryScheme from "../../assets/pangea-discovery.jpg";
 const DescriptionBlock = () => {
   return (
     <div>
-      <p>{descriptionPangea.p1}</p>
+      <h3>Description</h3>
+      <p>{descriptionPangea.description}</p>
       <Image url={discoveryScheme} alt="Pangea discovery scheme" />
-      <p>{descriptionPangea.p2}</p>
-      <p>{descriptionPangea.p3}</p>
-      <p>{descriptionPangea.p4}</p>
-      <p>{descriptionPangea.p5}</p>
+      <h3>Seissons</h3>
+      <p>{descriptionPangea.session}</p>
+      <h3>Integration</h3>
+      <p>{descriptionPangea.integration}</p>
+      <h3>Stack/lib</h3>
+      <p>{descriptionPangea.stack}</p>
+      <h3>What I've learned</h3>
+      <p>{descriptionPangea.learned}</p>
     </div>
   );
 };
@@ -25,11 +27,9 @@ const DescriptionBlock = () => {
 function ProjectPangea() {
   return (
     <div className="projectPangea">
-      <ProjectHeader projectName="Pangea" />
-
-      <ProjectDescription>
+      <ProjectDetail projectName="Pangea">
         <DescriptionBlock />
-      </ProjectDescription>
+      </ProjectDetail>
     </div>
   );
 }

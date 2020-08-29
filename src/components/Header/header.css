@@ -1,8 +1,7 @@
 .header {
   display: flex;
   justify-content: center;
-  flex-grow: 1;
-  flex-shrink: 0;
+  background-color: var(--theme-background-color);
 }
 
 .header a {
@@ -22,7 +21,6 @@
 }
 
 .header__left li {
-  text-shadow: 1px 1px var(--theme-text-color-1);
   font-size: 7vh;
 }
 

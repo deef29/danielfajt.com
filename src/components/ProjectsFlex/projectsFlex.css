@@ -1,11 +1,12 @@
-.projects {
-  margin-top: 6vw;
-  display: flex;
+.projects-flex {
+  background-color: var(--theme-background-color);
+  padding: 3vw;
   box-sizing: border-box;
-  flex-wrap: wrap;
+  display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-.projects div {
+.projects-flex div {
   margin: 0.5vh;
 }

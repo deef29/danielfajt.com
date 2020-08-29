@@ -3,9 +3,9 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 // Styles, themes
 import "./styles/theme.js";
 import "./styles/global.css";
-// Components
-import Header from "./components/Header/Header";
-import NavBar from "./components/Navbar/Navbar";
+// Layout
+import AppLayout from "./layouts/AppLayout";
+
 // Pages
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -14,18 +14,18 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div>
+    <React.Fragment>
       <BrowserRouter>
-        <NavBar />
-        <Header />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/contact" component={Contact} />
-        </Switch>
+        <AppLayout>
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/contact" component={Contact} />
+          </Switch>
+        </AppLayout>
       </BrowserRouter>
-    </div>
+    </React.Fragment>
   );
 }
 

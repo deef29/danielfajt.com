@@ -1,3 +1,7 @@
+.projectImg {
+  background-color: red;
+}
+
 .projectImgSmall {
   border: 1px solid var(--theme-text-color-2);
   width: 30vw;
@@ -6,10 +10,12 @@
   padding: 0.5vw;
   margin: 2vw;
   margin-right: 0px;
+  opacity: 0.8;
 }
 
 @media all and (max-width: 500px) {
   .projectImgSmall {
-    float: none;
+    padding: 10px;
+    margin: 18px;
   }
 }

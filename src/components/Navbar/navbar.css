@@ -1,9 +1,8 @@
 .nav {
   color: var(--theme-text-color-1);
+  background-color: var(--theme-background-color);
   font-size: 1.2em;
-  padding-top: 2vh;
-  margin-right: 1vw;
-  padding-bottom: 1vh;
+  padding: 2vh 2vw;
 }
 
 .nav ul {
@@ -32,12 +31,13 @@
   display: flex;
   justify-content: center;
   text-decoration: none;
-  color: inherit;
+  color: var(--theme-text-color-2);
   transition: all 0.3s ease 0s;
+  padding: 1vw;
 }
 
 .nav__links li a:hover {
-  color: var(--theme-text-color-2);
+  color: var(--theme-text-color-1);
 }
 
 /* Small device */
@@ -48,5 +48,6 @@
   .nav__links li a {
     flex-flow: column;
     align-items: center;
+    padding: 10px;
   }
 }

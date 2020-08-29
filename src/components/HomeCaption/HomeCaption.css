@@ -1,9 +1,10 @@
 .home-caption {
-  margin-top: 16vh;
+  background-color: var(--theme-background-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 5vmin;
+  font-size: 3vmax;
+  padding-top: 4vw;
 }
 
 .home-caption ul {

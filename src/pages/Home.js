@@ -4,9 +4,9 @@ import HomeCaption from "../components/HomeCaption/HomeCaption";
 
 function Home() {
   return (
-    <div>
+    <React.Fragment>
       <HomeCaption />
-    </div>
+    </React.Fragment>
   );
 }
 
