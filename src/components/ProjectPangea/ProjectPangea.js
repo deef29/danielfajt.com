@@ -6,7 +6,12 @@ import Image from "../ProjectDetail/projectDescriptionImg";
 import { projectList } from "../../assets/_staticData";
 import discoveryScheme from "../../assets/pangea-discovery.jpg";
 
-const projectData = projectList.find((project) => project.name === "Pangea");
+const projectData = projectList.find(
+  (project) => project.name === "Pangea bum"
+);
+
+const testName = projectData.name.replace(/\s/g, "-");
+console.log("testname:", testName);
 
 const DetailBlock = () => {
   const projectDetail = projectData.detail || "No project detail data found";
@@ -29,12 +34,14 @@ const DetailBlock = () => {
 };
 
 function ProjectPangea() {
-  return (
+  return projectData ? (
     <div className="projectPangea">
       <ProjectDetail projectName="Pangea" githubLink={projectData.githubUrl}>
         <DetailBlock />
       </ProjectDetail>
     </div>
+  ) : (
+    <ProjectDetail projectName="No Project name found" githubLink="" />
   );
 }
 

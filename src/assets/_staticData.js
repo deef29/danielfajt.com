@@ -1,7 +1,7 @@
 export const projectList = [
   {
     key: 1,
-    name: "Pangea",
+    name: "Pangea bum",
     githubUrl: "",
     desc: "Internet service provider network discovery and inventory system",
     stack: [
