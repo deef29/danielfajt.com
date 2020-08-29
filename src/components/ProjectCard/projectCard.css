@@ -1,7 +1,6 @@
 .project-card {
-  color: var(--theme-text-color-2);
-  border-color: var(--theme-text-color-1);
-  background-color: rgb(45, 51, 80);
+  color: rgb(60, 69, 109);
+  background-color: var(--theme-surface-1);
   border: 1px solid;
   border-radius: 8px;
   box-sizing: border-box;
@@ -20,7 +19,7 @@
 }
 
 .project-card__title {
-  font-family: "Montserrat-Light";
+  color: var(--theme-text-color-2);
 }
 
 .project-card__stack {
@@ -39,6 +38,7 @@
   font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.5s;
+  font-family: "Montserrat-Light";
 }
 .project-card__button button:hover {
   color: var(--theme-background-color);
