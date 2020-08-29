@@ -3,23 +3,27 @@ import React from "react";
 import ProjectDetail from "../ProjectDetail/ProjectDetail";
 import Image from "../ProjectDetail/projectDescriptionImg";
 // Assets
-import { descriptionPangea } from "../../assets/_staticData";
+import { projectList } from "../../assets/_staticData";
 import discoveryScheme from "../../assets/pangea-discovery.jpg";
 
-const DescriptionBlock = () => {
+const projectData = projectList.find((project) => project.name === "Pangea");
+
+const DetailBlock = () => {
+  const projectDetail = projectData.detail || "No project detail data found";
+
   return (
     <div>
       <h3>Description</h3>
-      <p>{descriptionPangea.description}</p>
+      <p>{projectDetail.description}</p>
       <Image url={discoveryScheme} alt="Pangea discovery scheme" />
       <h3>Seissons</h3>
-      <p>{descriptionPangea.session}</p>
+      <p>{projectDetail.session}</p>
       <h3>Integration</h3>
-      <p>{descriptionPangea.integration}</p>
+      <p>{projectDetail.integration}</p>
       <h3>Stack/lib</h3>
-      <p>{descriptionPangea.stack}</p>
+      <p>{projectDetail.stack}</p>
       <h3>What I've learned</h3>
-      <p>{descriptionPangea.learned}</p>
+      <p>{projectDetail.learned}</p>
     </div>
   );
 };
@@ -27,8 +31,8 @@ const DescriptionBlock = () => {
 function ProjectPangea() {
   return (
     <div className="projectPangea">
-      <ProjectDetail projectName="Pangea">
-        <DescriptionBlock />
+      <ProjectDetail projectName="Pangea" githubLink={projectData.githubUrl}>
+        <DetailBlock />
       </ProjectDetail>
     </div>
   );
