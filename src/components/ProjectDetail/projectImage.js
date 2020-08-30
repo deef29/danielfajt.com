@@ -1,6 +1,6 @@
 import React from "react";
 // Style
-import "./projectDescriptionImg.css";
+import "./projectImage.css";
 // Components
 import ModalImage from "react-modal-image";
 

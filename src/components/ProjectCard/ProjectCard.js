@@ -1,13 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useRouteMatch } from "react-router-dom";
 // Style
 import "./projectCard.css";
 
 function ProjectCard(props) {
-  const name = props.cardData.name;
-  const desc = props.cardData.desc;
-  const stack = props.cardData.stack;
-  const url = "projects/" + props.cardData.key || "404";
+  const { path } = useRouteMatch();
+  const name = props.projectData.name;
+  const desc = props.projectData.desc;
+  const stack = props.projectData.stack;
+  const projectId = props.projectData.id;
 
   return (
     <div>
@@ -22,7 +23,7 @@ function ProjectCard(props) {
             : "No projects found"}
         </ul>
         <p className="project-card__button">
-          <Link to={url}>
+          <Link to={`${path}/${projectId}`}>
             <button>Details</button>
           </Link>
         </p>

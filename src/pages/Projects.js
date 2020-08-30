@@ -1,20 +1,22 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, useRouteMatch } from "react-router-dom";
 // Components
 import ProjectsFlex from "../components/ProjectsFlex/ProjectsFlex";
-import ProjectPangea from "../components/ProjectPangea/ProjectPangea";
+import ProjectDetail from "../components/ProjectDetail/ProjectDetail";
 // Static data
 import { projectList } from "../assets/_staticData.js";
 
-function Projects({ match }) {
+function Projects() {
+  const { path } = useRouteMatch();
+
   return (
     <div>
-      {match.isExact ? <ProjectsFlex cardData={projectList} /> : null}
-
-      <Route path={match.url + "/1"} component={ProjectPangea} />
-      <Route path={match.url + "/2"} component={ProjectPangea} />
-      <Route path={match.url + "/3"} component={ProjectPangea} />
-      <Route path={match.url + "/4"} component={ProjectPangea} />
+      <Route exact path={path}>
+        <ProjectsFlex projectList={projectList} />
+      </Route>
+      <Route path={`${path}/:projectIdUrl`}>
+        <ProjectDetail projects={projectList} />
+      </Route>
     </div>
   );
 }
