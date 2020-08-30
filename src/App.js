@@ -7,6 +7,7 @@ import "./styles/global.css";
 import AppLayout from "./layouts/AppLayout";
 
 // Pages
+import E404 from "./pages/404";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
@@ -24,6 +25,7 @@ function App() {
               <Projects />
             </Route>
             <Route path="/contact" component={Contact} />
+            <Route component={E404} />
           </Switch>
         </AppLayout>
       </BrowserRouter>

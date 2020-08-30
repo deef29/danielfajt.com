@@ -1,10 +1,11 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useParams, useHistory } from "react-router-dom";
 // Style
 import "./projectDetail.css";
 import { GoLogoGithub } from "react-icons/go";
 // Components
 import DetailImage from "./projectImage";
+// Pages
 
 const gitUrlGen = (gitUrl) => {
   return gitUrl ? (
@@ -32,9 +33,16 @@ const detailBlockGen = (detail) => {
 };
 
 function ProjectDetail(props) {
+  let history = useHistory();
+  console.log(history);
   const { projectIdUrl } = useParams();
   const { projects } = props;
   const projectData = projects.find((project) => project.id === projectIdUrl);
+  if (!projectData) {
+    history.push("/projects");
+    return null;
+  }
+
   const { name, githubUrl, detail } = projectData;
   const detailBlock = detailBlockGen(detail);
   const gitUrl = gitUrlGen(githubUrl);
