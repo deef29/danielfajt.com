@@ -30,22 +30,29 @@ export const projectList = [
   },
   {
     id: "c801d5e2-f13a-404a-93b3-39065c5709ad",
-    name: "Lusk frontend",
-    desc: "Internet service provider network discovery and inventory system",
-    stack: [
-      "Python",
-      "Flask (API)",
-      "Multiprocessing",
-      "MongoDB",
-      "PostgreSQL (v1)",
-    ],
+    name: "Lusk Frontend",
+    githubUrl: "https://github.com/deef29/luskr",
+    desc: "Drugs management system",
+    stack: ["React", "Redux + RTK", "Axios", "Material UI"],
     detail: {
-      description: "This is Lusk frontend project",
+      Description:
+        "LUSK is an anagram for SUKL - The State institute for drug control of Czech Republic. Besides that, LUSK is a frontend React/Redux application used as an interface to communicate with its backend, of course. The key frontend feature is to provide access to SUKL forms management. Required by law, drug companies have to report how they operate with registered drugs, report its origin et cetera.",
+      Components:
+        "Most components in this project are focused to present and manipulate data collections according to SUKL policy. Forms, tables or card lists.",
+      img1: {
+        name: "luskr-workplaces.jpg",
+        alt: "LUSK workplaces list",
+      },
+      Features:
+        "This project is still in a development phase and in its very early version. I would like to deliver the most convenient way to manipulate those data sets, search, data validation etc. I would like to develop fully functional drug inventory system, drug registry search, user management, certification management, multi-language solution etc.",
+
+      "What I’ve learned":
+        "Well, Material UI is nice and easy to use if you need functional application components.State management is pretty nice and useful concept and I should have larned about RTK before I used pure Redux all around. The biggest issue for me was how to structure project files and to understand reducers.",
     },
   },
   {
     id: "395199fd-9a34-4b2e-9fe5-3eedfeff69db",
-    name: "Lusk backed",
+    name: "Lusk Backed",
     desc: "Internet service provider network discovery and inventory system",
     stack: [
       "Python",
