@@ -32,7 +32,7 @@ export const projectList = [
     id: "c801d5e2-f13a-404a-93b3-39065c5709ad",
     name: "Lusk Frontend",
     githubUrl: "https://github.com/deef29/luskr",
-    desc: "Drugs management system",
+    desc: "Frontend for drugs management system",
     stack: ["React", "Redux + RTK", "Axios", "Material UI"],
     detail: {
       Description:
@@ -52,8 +52,8 @@ export const projectList = [
   },
   {
     id: "395199fd-9a34-4b2e-9fe5-3eedfeff69db",
-    name: "Lusk Backed",
-    desc: "Internet service provider network discovery and inventory system",
+    name: "Lusk Backend",
+    desc: "Backend for drugs management system",
     stack: [
       "Python",
       "Flask (API)",
@@ -62,22 +62,29 @@ export const projectList = [
       "PostgreSQL (v1)",
     ],
     detail: {
-      description: "This is Lusk BACKEND project",
+      Description:
+        "LUSK backend is a NodeJS/Express application to manage reports for the State institute for drug control of Czech Republic. It communicates directly with institute’s API using Axios and provides data for the frontend React application.",
+      "Proxy API":
+        "It serves as a proxy API for the drug institute. It formats/parses datasets exactly according to the drug institute’s documentation. There are few “not well handled” situations with official API and this proxy API corrects them, so a Frontend application doesn’t have to. For example, there is now way to fetch reports for a whole year from official API, so I used Promises.all() to fetch and format data and provide them as whole. This proxy API handles security certifications as well.",
+      "Parsing and validation":
+        "Backend uses @hapi/joi library for data validation. There is a strict policy in data flow. Application is ready to process uploaded companies datasets, parse them and validate them against SUKL requirements. If there is any inconsistency, the segment is marked and returned to Frontend (user) for correction. This allows multiple data inputs and inter-connection with other companie’s systems.",
+      "Step-by-step":
+        "There is a lot of work on this project ahead. For now, I am trying to understand how the user works with the current software in the company. What bothers them, and what can be done automatically. The goal is to have a fast, modern solution to handle tasks required by law, quick errors edit/correction, efficient drug database search, deadlines watchdog or insights.",
+      "What I’ve learned":
+        "Honestly, I’d say using Python for data manipulation might be easier than JS, but I’ve done it in JS anyway just to learn. I used Express and Axios as they make things easier done. Multer is nice especially considering file uploads and I really, really like hapi/joi for data validation. A headache part of the project (so far) was to understand async operations in JS / Promises.",
     },
   },
   {
     id: "db4e5819-1180-4641-9d2a-73af7b8ff458",
     name: "danielfajt.com",
-    desc: "Internet service provider network discovery and inventory system",
-    stack: [
-      "Python",
-      "Flask (API)",
-      "Multiprocessing",
-      "MongoDB",
-      "PostgreSQL (v1)",
-    ],
+    githubUrl: "https://github.com/deef29/danielfajt.com",
+    desc: "My personal website",
+    stack: ["React", "CSS3", "MobX"],
     detail: {
-      description: "This is this project",
+      description:
+        "My personal website created primarily to introduce myself and to briefly present my work. ",
+      "What I've learned":
+        "Layouts and simple responsive design. I wanted to know, why I should use SASS over the pure CSS3. And I have. I’ll implement MobX as well.",
     },
   },
 ];
