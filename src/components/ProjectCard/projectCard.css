@@ -4,15 +4,15 @@
   border: 1px solid;
   border-radius: 8px;
   box-sizing: border-box;
-  min-width: 250px;
-  max-width: 300px;
   padding: 10px;
   display: flex;
   flex-flow: column;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .project-card__desc {
+  max-height: min-content;
   font-family: "Montserrat-LightItalic";
   color: var(--theme-text-color-1);
   text-align: center;
@@ -27,6 +27,12 @@
   padding: 0;
   list-style: none;
   text-align: center;
+  height: 100%;
+}
+
+.project-card__button {
+  flex-grow: 1;
+  margin: auto;
 }
 
 .project-card__button button {

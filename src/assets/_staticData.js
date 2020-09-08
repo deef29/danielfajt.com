@@ -54,13 +54,7 @@ export const projectList = [
     id: "395199fd-9a34-4b2e-9fe5-3eedfeff69db",
     name: "Lusk Backend",
     desc: "Backend for drugs management system",
-    stack: [
-      "Python",
-      "Flask (API)",
-      "Multiprocessing",
-      "MongoDB",
-      "PostgreSQL (v1)",
-    ],
+    stack: ["NodeJS", "Express", "Axios", "MongoDB", "@hapi/joi"],
     detail: {
       Description:
         "LUSK backend is a NodeJS/Express application to manage reports for the State institute for drug control of Czech Republic. It communicates directly with institute’s API using Axios and provides data for the frontend React application.",
@@ -78,7 +72,7 @@ export const projectList = [
     id: "db4e5819-1180-4641-9d2a-73af7b8ff458",
     name: "danielfajt.com",
     githubUrl: "https://github.com/deef29/danielfajt.com",
-    desc: "My personal website",
+    desc: "My simple personal portfolio webpage",
     stack: ["React", "CSS3", "MobX"],
     detail: {
       description:
