@@ -1,0 +1,7 @@
+.footer p {
+  margin: 0;
+  padding: 6px;
+  background-color: var(--theme-text-color-2);
+  font-family: "Montserrat";
+  text-align: center;
+}
