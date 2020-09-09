@@ -1,0 +1,15 @@
+:root {
+  --circle-size: 200px;
+}
+
+.circleface {
+  background-color: var(--theme-surface-1);
+  border: 3px solid var(--theme-surface-2);
+  min-width: var(--circle-size);
+  min-height: var(--circle-size);
+  line-height: var(--circle-size);
+  border-radius: 50%;
+  background-image: url("/images/me7.jpg");
+  background-size: cover;
+  opacity: 80%;
+}

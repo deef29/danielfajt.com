@@ -1,5 +1,5 @@
 .project-card {
-  color: rgb(60, 69, 109);
+  color: var(--theme-surface-2);
   background-color: var(--theme-surface-1);
   border: 1px solid;
   border-radius: 8px;

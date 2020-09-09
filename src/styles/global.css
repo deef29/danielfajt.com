@@ -23,16 +23,17 @@ html {
   font-family: Montserrat-Light, sans-serif;
   background-color: black;
   height: 100%;
-}
-
-.layout {
-  background-color: var(--theme-background-color);
-  display: flex;
-  flex-direction: column;
-  height: 100%;
   flex: 1 0 auto;
 }
 
+.layout {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  height: 100%;
+}
+
 .content {
+  background-color: var(--theme-background-color);
   flex: 1 0 auto;
 }
