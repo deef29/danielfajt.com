@@ -12,7 +12,11 @@ function About() {
       <div>
         <CircleFace />
       </div>
-      <div className="abouttext">{aboutMe}</div>
+      <div>
+        {aboutMe.map((section, index) => {
+          return <p key={index}>{section}</p>;
+        })}
+      </div>
     </div>
   );
 }

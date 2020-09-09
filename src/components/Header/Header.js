@@ -13,6 +13,7 @@ function Header() {
           <li>Fajt</li>
         </ul>
       </Link>
+
       <Link to="/">
         <ul className="header__right">
           <li>Web</li>

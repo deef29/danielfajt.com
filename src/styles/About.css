@@ -3,6 +3,17 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-
   font-size: 20px;
+  margin: 5vw 10vw;
+}
+
+.about div {
+  margin: 10px;
+}
+
+@media all and (max-width: 800px) {
+  .about {
+    flex-flow: column;
+    align-items: center;
+  }
 }
