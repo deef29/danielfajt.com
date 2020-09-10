@@ -1,0 +1,31 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6vw;
+}
+
+.contact__left {
+  color: var(--theme-text-color-2);
+  padding-right: 20px;
+  font-family: "Montserrat-LightItalic";
+}
+
+.contact__right {
+  border-left: 1px solid var(--theme-text-color-1);
+  padding-left: 20px;
+}
+
+@media all and (max-width: 710px) {
+  .contact {
+    flex-flow: column;
+  }
+  .contact__left {
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  .contact__right {
+    border: none;
+    padding: 0;
+  }
+}

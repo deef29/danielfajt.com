@@ -1,0 +1,36 @@
+:root {
+  --contact-panel-size: 25px;
+}
+
+.contactPanel {
+  color: var(--theme-text-color-1);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: var(--contact-panel-size);
+}
+
+.contactPanel div {
+  padding: 20px;
+}
+
+.contactPanel .icon {
+  color: var(--theme-text-color-2);
+  margin-top: 20px;
+  padding: 0;
+  font-size: calc(var(--contact-panel-size) * 3);
+}
+.contactPanel:hover {
+  cursor: pointer;
+  color: var(--theme-text-color-2);
+}
+
+@media all and (max-width: 500px) {
+  .contactPanel {
+    flex-flow: column;
+    margin: 0 0 50px 0;
+  }
+  .contactPanel div {
+    padding: 0px;
+  }
+}
