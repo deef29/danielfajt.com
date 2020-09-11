@@ -53,6 +53,7 @@ export const projectList = [
   {
     id: "395199fd-9a34-4b2e-9fe5-3eedfeff69db",
     name: "Lusk Backend",
+    githubUrl: "https://github.com/deef29/luskb",
     desc: "Backend for drugs management system",
     stack: ["NodeJS", "Express", "Axios", "MongoDB", "@hapi/joi"],
     detail: {
@@ -92,5 +93,5 @@ export const aboutMe = [
 
   "Currently, I am looking for a job here as a junior programmer. Meanwhile, I’ve started to learn MERN stack and I am working (for free) for another company in Czech republic trying to develop front-end (React) and back-end (Node) application to process, validate and upload monthly reports (required by law) to State institute for Drug Control. It’s my learning project for now with just a little chance it may grow from “data parsing” to “drug inventory” system for pharmaceutical companies.",
 
-  "Well, thank you for reading my cover letter. I’ve tried to be as concrete as possible. My attached professional CV provides summary about my work experience. I should also mention that I have a valid EAD (permission to work in the US) and I don’t need any health insurance. Also, I would gladly",
+  "I should also mention that I'm eligible to work in the US and I don’t need any health insurance.",
 ];
