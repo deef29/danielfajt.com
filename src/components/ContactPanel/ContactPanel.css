@@ -8,6 +8,7 @@
   justify-content: flex-start;
   align-items: center;
   font-size: var(--contact-panel-size);
+  text-decoration: none;
 }
 
 .contactPanel div {

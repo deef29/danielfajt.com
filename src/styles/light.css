@@ -1,10 +1,10 @@
 :root {
-  --theme-background-color: rgb(249, 249, 249);
-
-  --theme-surface-color: #f5f5f5;
-  --theme-surface-color-light: #fafafa;
-
-  --theme-primary-color: #9f9f9f;
-  --theme-primary-color-dark: #3a3a3a;
-  --theme-secondary-color: #ff9533;
+  /* Background */
+  --theme-background-color: #ffffff;
+  /* Font */
+  --theme-text-color-1: #003459;
+  --theme-text-color-2: #00a8e8;
+  /* Surface */
+  --theme-surface-1: #f8f8f8;
+  --theme-surface-2: #00a8e8;
 }

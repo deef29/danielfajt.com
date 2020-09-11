@@ -4,7 +4,7 @@
 
 .circleface {
   background-color: var(--theme-surface-1);
-  border: 3px solid var(--theme-surface-2);
+  border: 2px solid var(--theme-text-color-2);
   min-width: var(--circle-size);
   min-height: var(--circle-size);
   line-height: var(--circle-size);
