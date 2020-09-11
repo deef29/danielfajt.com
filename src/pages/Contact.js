@@ -18,6 +18,7 @@ function Contact() {
           icon={<AiOutlineMail />}
           contactText="daniel29se@gmail.com"
           buttonText="Text"
+          url="mailto:daniel29se@gmail.com"
         />
         <ContactPanel
           icon={<HiPhone />}
@@ -28,6 +29,7 @@ function Contact() {
           icon={<FaTelegram />}
           contactText="@danielfajt"
           buttonText="Text"
+          url="https://t.me/danielfajt"
         />
       </div>
     </div>

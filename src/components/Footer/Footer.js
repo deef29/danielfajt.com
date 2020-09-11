@@ -4,7 +4,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer className="footer">
-      <p>Open to opportunities</p>
+      <p>Open to new opportunities</p>
     </footer>
   );
 }
