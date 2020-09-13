@@ -3,10 +3,10 @@ import React from "react";
 import "./projectsFlex.css";
 // Components
 import ProjectCard from "./ProjectCard";
+// Static data
+import { projectList } from "../../assets/_staticData";
 
-function Projects(props) {
-  const projectList = props.projectList;
-
+function Projects() {
   return (
     <div className="projects-flex">
       {projectList.map((project) => {

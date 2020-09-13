@@ -8,7 +8,7 @@ function ProjectCard(props) {
   const name = props.projectData.name;
   const desc = props.projectData.desc;
   const stack = props.projectData.stack;
-  const projectId = props.projectData.id;
+  const linkto = props.projectData.linkto;
 
   return (
     <div>
@@ -23,7 +23,7 @@ function ProjectCard(props) {
             : "No projects found"}
         </ul>
         <p className="project-card__button">
-          <Link to={`${path}/${projectId}`}>
+          <Link to={`${path}/${linkto}`}>
             <button>Details</button>
           </Link>
         </p>

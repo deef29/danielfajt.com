@@ -1,6 +1,7 @@
 export const projectList = [
   {
     id: "5830aa79-ed9a-4dd6-94ed-e99e700067a4",
+    linkto: "pangea",
     name: "Pangea",
     githubUrl: "",
     desc: "Internet service provider network discovery and inventory system",
@@ -30,6 +31,7 @@ export const projectList = [
   },
   {
     id: "c801d5e2-f13a-404a-93b3-39065c5709ad",
+    linkto: "luskf",
     name: "Lusk Frontend",
     githubUrl: "https://github.com/deef29/luskr",
     desc: "Frontend for drugs management system",
@@ -52,6 +54,7 @@ export const projectList = [
   },
   {
     id: "395199fd-9a34-4b2e-9fe5-3eedfeff69db",
+    linkto: "luskb",
     name: "Lusk Backend",
     githubUrl: "https://github.com/deef29/luskb",
     desc: "Backend for drugs management system",
@@ -71,6 +74,7 @@ export const projectList = [
   },
   {
     id: "db4e5819-1180-4641-9d2a-73af7b8ff458",
+    linkto: "dfcom",
     name: "danielfajt.com",
     githubUrl: "https://github.com/deef29/danielfajt.com",
     desc: "My simple personal portfolio webpage",
