@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useParams, useHistory } from "react-router-dom";
 // Style
 import "./projectDetail.css";
@@ -21,7 +21,7 @@ const detailBlockGen = (detail) => {
   let block = [];
   for (const [key, val] of Object.entries(detail)) {
     if (key.includes("img")) {
-      const imgFile = "/images/" + val.name;
+      const imgFile = "/public/images/" + val.name;
       const imgAlt = val.alt;
       block.push(<DetailImage key={key} url={imgFile} alt={imgAlt} />);
     } else {

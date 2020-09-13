@@ -8,4 +8,5 @@ const themes = {
 const activeTheme = "darkOrange"; // TODO Get value from global state...
 const themeFile = themes[activeTheme] || themes["default"];
 
-require(`${themeFile}`);
+// require(`${themeFile}`);
+require("./darkorange.css");

@@ -18,9 +18,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "dev": "webpack-dev-server --mode development --open --hot --watch",
-    "prod": "webpack --mode=production"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -49,11 +47,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.1.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
-    "css-loader": "^4.3.0",
     "html-webpack-plugin": "^4.4.1",
-    "mini-css-extract-plugin": "^0.11.1",
-    "style-loader": "^1.2.1",
-    "url-loader": "^4.1.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
