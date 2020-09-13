@@ -13,6 +13,9 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import PangeaPage from "./pages/projects/pangeaProject";
+import LuskFPage from "./pages/projects/luskfProject";
+import LuskBPage from "./pages/projects/luskbProject";
+import DFcomPage from "./pages/projects/DFcomProject";
 
 function App() {
   return (
@@ -24,9 +27,9 @@ function App() {
             <Route path="/about" exact component={About} />
             <Route path="/projects" exact component={ProjectsFlex} />
             <Route path="/projects/pangea" exact component={PangeaPage} />
-            <Route path="/projects/luskf" exact component={ProjectsFlex} />
-            <Route path="/projects/luskb" exact component={ProjectsFlex} />
-            <Route path="/projects/dfcom" exact component={ProjectsFlex} />
+            <Route path="/projects/luskf" exact component={LuskFPage} />
+            <Route path="/projects/luskb" exact component={LuskBPage} />
+            <Route path="/projects/dfcom" exact component={DFcomPage} />
 
             <Route path="/contact" component={Contact} />
             <Route component={E404} />

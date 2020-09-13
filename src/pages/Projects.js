@@ -3,6 +3,8 @@ import { Route, useRouteMatch } from "react-router-dom";
 // Components
 import ProjectsFlex from "../components/ProjectsFlex/ProjectsFlex";
 import ProjectDetail from "../components/ProjectDetail/ProjectDetail";
+// Styles
+// import "../styles/projectDetail.css";
 // Static data
 import { projectList } from "../assets/_staticData.js";
 

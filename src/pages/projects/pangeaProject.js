@@ -5,6 +5,7 @@ import "../../styles/projectDetail.css";
 // Components
 import ProjectImage from "../../components/ProjectImage/ProjectImage";
 import { gitUrlGen } from "../../components/ProjectGitHubRef/ProjectGitHubRef";
+import pangeaScheme from "../../assets/pangea-discovery.jpg";
 
 export default function data() {
   return (
@@ -31,10 +32,8 @@ export default function data() {
           discovery was a key feature, which was crucial for further automation
           development.
         </p>
-        <ProjectImage
-          url="/public/images/pangea-discovery.jpg"
-          alt="Pangea discovery scheme"
-        />
+        <ProjectImage url={pangeaScheme} alt="Pangea discovery scheme" />
+
         <h3>Session</h3>
         <p>
           Each network discovery was managed as a session with its own unique

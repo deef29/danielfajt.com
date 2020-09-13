@@ -9,7 +9,7 @@
   min-height: var(--circle-size);
   line-height: var(--circle-size);
   border-radius: 50%;
-  background-image: url("/public/images/me7.jpg");
+  background-image: url("../../assets/me7.jpg");
   background-size: cover;
   opacity: 0.8;
 }
