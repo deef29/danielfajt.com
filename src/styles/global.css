@@ -24,6 +24,9 @@ html {
   background-color: black;
   height: 100%;
   flex: 1 0 auto;
+
+  width: auto !important;
+  overflow-x: hidden !important;
 }
 
 .layout {

@@ -9,7 +9,7 @@ const AppLayout = (props) => {
     <div className="layout">
       <NavBar />
       <Header />
-      <main className="content">{props.children}</main>
+      <div className="content">{props.children}</div>
       <Footer />
     </div>
   );

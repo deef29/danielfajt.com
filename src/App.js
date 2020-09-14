@@ -30,7 +30,6 @@ function App() {
             <Route path="/projects/luskf" exact component={LuskFPage} />
             <Route path="/projects/luskb" exact component={LuskBPage} />
             <Route path="/projects/dfcom" exact component={DFcomPage} />
-
             <Route path="/contact" component={Contact} />
             <Route component={E404} />
           </Switch>
