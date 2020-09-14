@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 // Style
-import "./header.css";
+import "./headerSection.css";
 
 function Header() {
   return (
-    <header className="header">
+    <div className="page_header">
       <Link to="/">
-        <ul className="header__left">
+        <ul className="page_header__left">
           <li>Daniel</li>
           <li>danielfajt.com</li>
           <li>Fajt</li>
@@ -15,11 +15,11 @@ function Header() {
       </Link>
 
       <Link to="/">
-        <ul className="header__right">
+        <ul className="page_header__right">
           <li>Web</li>
         </ul>
       </Link>
-    </header>
+    </div>
   );
 }
 

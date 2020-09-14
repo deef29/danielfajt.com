@@ -1,7 +1,7 @@
 .nav {
   color: var(--theme-text-color-1);
   background-color: var(--theme-background-color);
-  font-size: 1.2em;
+  font-size: 1.6rem;
   padding: 2vh 2vw;
 }
 
@@ -44,6 +44,7 @@
 @media all and (max-width: 500px) {
   .nav__links {
     justify-content: center;
+    font-size: 1.2rem;
   }
   .nav__links li a {
     flex-flow: column;

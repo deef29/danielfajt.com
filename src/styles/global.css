@@ -13,7 +13,7 @@
 
 #root {
   height: 100%;
-  background-color: red;
+  background-color: green;
 }
 
 body,
@@ -21,6 +21,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: Montserrat-Light, sans-serif;
+  font-size: 14px;
   background-color: black;
   height: 100%;
   flex: 1 0 auto;
@@ -34,6 +35,13 @@ html {
   flex-direction: column;
   flex: 1 0 auto;
   height: 100%;
+}
+
+.nav-position {
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+  z-index: 1;
 }
 
 .content {

@@ -10,7 +10,7 @@ export default function data() {
     <div className="project-detail">
       <div className="project-detail__header">
         <h1 className="project-detail__header__left">Project name:</h1>
-        <h1 className="project-detail__header__right">Pangea</h1>
+        <h1 className="project-detail__header__right">danielfajt.com</h1>
       </div>
 
       <div className="project-detail__description">
