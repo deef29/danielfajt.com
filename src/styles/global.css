@@ -13,7 +13,7 @@
 
 #root {
   height: 100%;
-  background-color: green;
+  background-color: var(--theme-background-color);
 }
 
 body,
